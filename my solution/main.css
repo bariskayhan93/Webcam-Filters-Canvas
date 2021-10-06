@@ -1,0 +1,132 @@
+:root {
+  --base: rgba(146, 54, 54, 0.589);
+  --spacing: 10px;
+}
+
+body {
+  background: #284576;
+  color: rgb(226, 226, 209);
+  font-family: "helvatica neue", sans-serif;
+  font-weight: 100;
+  font-size: 10px;
+  text-align: center;
+}
+.container {
+  width: 75%;
+  height: auto;
+  margin-top: 10px;
+  align-items: relative;
+  padding: var(--spacing);
+  background: var(--base);
+  border-radius: 2%;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.player {
+  border: 1px solid black;
+  box-shadow: 2px 2px 3px black;
+  width: 320px;
+  height: 240px;
+}
+
+.photo {
+  border: 1px solid black;
+  box-shadow: 2px 2px 3px black;
+  width: 320px;
+  height: 240px;
+}
+
+img {
+  border: 1px solid black;
+  box-shadow: 2px 2px 3px black;
+  width: 320px;
+  height: 240px;
+}
+
+#canvas {
+  display: none;
+}
+
+.camera {
+  width: 320px;
+  margin: 0 auto;
+}
+
+button {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 32px;
+  background-color: rgba(0, 150, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  font-family: "Lucida Grande", "Arial", sans-serif;
+  color: rgba(255, 255, 255, 1);
+}
+
+.contentarea {
+  font-size: 16px;
+  font-family: "Lucida Grande", "Arial", sans-serif;
+  width: 760px;
+}
+
+.controllers {
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100px;
+}
+
+.header {
+  color: rgb(228, 240, 185);
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 20px;
+  margin-top: -40px;
+  margin: 0 auto;
+}
+
+.footer {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(21, 146, 125);
+  margin: 50px;
+}
+
+.footer a {
+  color: rgb(21, 146, 125);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: rgb(185, 37, 18);
+}
+
+
+.switch-toggle {
+  display: block;
+  position: relative;
+  width: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Lucida Grande", "Arial", sans-serif;
+}
+.switch-toggle input {
+ position:initial;
+}
+.switch-toggle input + label {
+ padding: 7px;
+ float:initial;
+ cursor: pointer;
+}
+.switch-toggle input:checked + label {
+ background: green;
+ color: white;
+}

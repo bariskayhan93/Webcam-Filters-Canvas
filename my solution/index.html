@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" type="text/css" media="all" />
+    <link
+      href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Playing with Camera Variables <span class="highlight">JS</span></h2>
+      </div>
+
+      <div class="controls">
+        <div class="photobooth">
+          <div class="controls">
+            <div class="rgb">
+              <label for="rmin">Red Min:</label>
+              <input type="range" min="0" max="255" name="rmin" />
+              <label for="rmax">Red Max:</label>
+              <input type="range" min="0" max="255" name="rmax" />
+
+              <br />
+
+              <label for="gmin">Green Min:</label>
+              <input type="range" min="0" max="255" name="gmin" />
+              <label for="gmax">Green Max:</label>
+              <input type="range" min="0" max="255" name="gmax" />
+
+              <br />
+
+              <label for="bmin">Blue Min:</label>
+              <input type="range" min="0" max="255" name="bmin" />
+              <label for="bmax">Blue Max:</label>
+              <input type="range" min="0" max="255" name="bmax" />
+            </div>
+            <div class="switch-toggle switch-3 switch-candy">
+
+              <input id="red" name="state-d" type="radio" checked="" />
+              <label for="red" onclick="selectCategory('redfilterBool')">Red</label>
+  
+              <input id="rgb" name="state-d" type="radio" checked="" />
+              <label for="rgb" class="disabled" onclick="selectCategory('rgbsplitBool')">Split</label>
+  
+              <input id="green" name="state-d" type="radio" />
+              <label for="green" onclick="selectCategory('greenscreenBool')">GreenScreen</label>
+            </div>
+          </div>
+
+          <canvas class="photo"></canvas>
+          <video class="player"></video>
+          <button id="startbutton" onclick="takePhoto()">Take photo</button>
+
+          <div class="strip"></div>
+        </div>
+
+        <audio
+          class="snap"
+          src="https://soundbible.com/mp3/Camera%20Click-SoundBible.com-44806439.mp3"
+        ></audio>
+      </div>
+
+      <div class="footer">
+        &copy; 2021 <a href="https://github.com/bariskayhan93">Baris Kayhan</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
